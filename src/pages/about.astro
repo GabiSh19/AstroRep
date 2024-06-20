@@ -1,6 +1,7 @@
 ---
 // Server Only
 const name = 'Principal page';
+const title = 'Home page'
 
 ---
 
@@ -10,10 +11,10 @@ const name = 'Principal page';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
+		<title>{ title }</title>
 	</head>
 	<body>
 		<h1>About Astro</h1>
-		<h3>{name}</h3>
+		<h3>{ name }</h3>
 	</body>
 </html>
