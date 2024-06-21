@@ -13,12 +13,19 @@
 	<body>
 		<h1>Astrooooo</h1>
 
+		<p>Momento actual:{new Date().toLocaleTimeString()}</p>
+		<p id="current-time">Momento actual real:{new Date().toLocaleTimeString()}</p>
+		<footer></footer>
+
 		<script>
-
-			const currentYear:number = new Date().getFullYear();
+			//Client Only
 			const footer = document.querySelector('footer') as HTMLElement;
-			footer.innerText = `Current year: ${currentYear} `;
+			const currentTimeParagraph = document.querySelector('#current-time') as HTMLParagraphElement;
+			
+			const currentYear:number = new Date().getFullYear();
 
+			footer.innerText = `Current year: ${currentYear} `;
+			currentTimeParagraph.innerText = `Momento actual real: ${new Date().toLocaleTimeString()}`;
 
 		</script>
 
