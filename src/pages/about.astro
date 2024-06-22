@@ -1,7 +1,11 @@
 ---
 // Server Only
+import '../components/Navbar.astro'
+import Navbar from '../components/Navbar.astro';
+
 const name = 'Principal page';
 const title = 'Home page'
+
 
 ---
 
@@ -14,12 +18,7 @@ const title = 'Home page'
 		<title>{ title }</title>
 	</head>
 	<body>
-		<nav>
-			<a href="/">Home Page</a>
-			<a href="/about">About Page</a>
-			<a href="/contact">Contact Page</a>
-
-		</nav>
+		<Navbar/>
 
 		<h1>About Astro</h1>
 		<h3>{ name }</h3>

@@ -1,4 +1,8 @@
 ---
+import Navbar from "../components/Navbar.astro";
+
+
+	
 
 ---
 
@@ -12,14 +16,9 @@
 	</head>
 	<body>
 
-		<nav>
-			<a href="/">Home Page</a>
-			<a href="/about">About Page</a>
-			<a href="/contact">Contact Page</a>
+		<Navbar/>
 
-		</nav>
-
-		<h1>Astrooooo</h1>
+		<h1>Astro Prev</h1>
 
 		<p>Momento actual:{new Date().toLocaleTimeString()}</p>
 		<p id="current-time">Momento actual real:{new Date().toLocaleTimeString()}</p>
