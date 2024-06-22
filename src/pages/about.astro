@@ -1,14 +1,22 @@
 ---
 // Server Only
 import MainLayout from '../layouts/MainLayout.astro';
+import CustomTitle from '../components/CustomTitle.astro';
 
 const name = 'Principal page';
-const title = 'Home page'
 
 
 ---
 	<MainLayout title="About Page">
-		<h1>About Astro</h1>
-		<h3>{ name }</h3>
+		
+		<CustomTitle title='AboutPage'/>
 		<p>Momento actual:{new Date().toLocaleTimeString()}</p>
 	</MainLayout>
+
+	<style is:global>
+
+		h1{
+			color: red;
+		}	
+
+	</style>
